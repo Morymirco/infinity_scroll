@@ -1,0 +1,134 @@
+body {
+  position: relative;
+  background-color: #013d55;
+  color: #fcf3ff;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 80px 80px;
+}
+.card {
+  max-width: 450px;
+  min-width: 400px;
+  padding: 35px;
+  border: 1px dotted white;
+  border-radius: 10px;
+  background-color: #c0d4c2;
+  color: #3f1766;
+}
+
+.img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  background-color: #f033aa;
+  padding: 12px 13px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0.2px 0.005px 0.02px #f4a2cd;
+  transition: all 1.5s ease-in-out;
+}
+a:hover {
+  background-color: #fb518f;
+}
+header {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 77px;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid #fbb1e5;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  position: relative;
+  list-style-type: none;
+  padding: 5px 10px;
+  font-size: 32px;
+  transition: all 5.25s ease;
+}
+.home::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: none;
+  width: 5px;
+  height: 2px;
+  background-color: #fb518f;
+  transition: all 2.25s ease;
+}
+.home:hover::after {
+  transition: all 1.25s ease;
+  display: block;
+  width: 95px;
+}
+
+.circle {
+  display: none;
+  position: fixed;
+  right: 25px;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: #f4a2cd;
+  border-radius: 50%;
+  border: 2px solid #f033aa;
+}
+div img {
+  width: 40px;
+}
+.popup {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  z-index: 10;
+  width: 400px;
+  height: 150px;
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgb(207, 188, 188);
+}
+.popup h2 {
+  color: #365c67;
+}
+.desactive {
+  display: none;
+}
+.popup button {
+  outline: none;
+  border: none;
+  padding: 10px 50px;
+  background-color: #1568f7;
+  border-radius: 10px;
+  color: white;
+}
+.footer {
+  margin: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.footer div {
+  align-self: center;
+}
